@@ -17,7 +17,7 @@ echo `pwd`
 echo "Starting the ant to build"
 ant -f build.xml > $EMAILMESSAGE
 ant clean  >> $EMAILMESSAGE
-ant debug >> $EMAILMESSAGAE
+ant debug > $EMAILMESSAGAE
 if [ "$?" = 1 ]; then
     echo "Application failed!"
     FAILED=1
