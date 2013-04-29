@@ -16,8 +16,8 @@ cd ../MPetition
 echo `pwd`
 echo "Starting the ant to build"
 ant -f build.xml > $EMAILMESSAGE
-ant clean  >> $EMAILMESSAGE
-ant debug > $EMAILMESSAGAE
+ant clean  
+ant debug  
 if [ "$?" = 1 ]; then
     echo "Application failed!"
     FAILED=1
@@ -33,4 +33,4 @@ EMAIL="expie00101@gmail.com"
 echo "This is an email message test" >> $EMAILMESSAGE
 echo "This is email text" >>$EMAILMESSAGE
 # send an email using /bin/mail
-/bin/mail -s "$SUBJECT" "$EMAIL" < $EiMAILMESSAGE
+/bin/mail -s "$SUBJECT" "$EMAIL" < "this is automated message"
