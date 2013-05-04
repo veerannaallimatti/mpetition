@@ -14,7 +14,7 @@ ant -f build.xml  $EMAILMESSAGE
 ant clean  
 ant debug  
 if [ "$?" = 1 ]; then
-    echo "Application failed!"
+    echo "Application failed!!"
     FAILED=1
 fi
 exit $FAILED
